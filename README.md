@@ -1,0 +1,1 @@
+# My hourly/daily/weekly/cyclic logs
