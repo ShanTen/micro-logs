@@ -7,12 +7,15 @@
 
     <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.10.0/styles/default.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script type="module">
     import hljs from 'https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/highlight.min.js';
     //  and it's easy to individually load & register additional languages
-    import go from 'https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/languages/go.min.js';
-    hljs.registerLanguage('go', go);
+    import javascript from 'https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/languages/javascript.min.js';
+    hljs.registerLanguage('js', javascript);
     </script>
+    
 </head>
 
 <body id="bodyID">
@@ -28,7 +31,7 @@
 
 </body>
 <footer style="text-align: center; width: 100%;">
-    <a href="https://github.com/ShanTen/MicroLogger">Link to Repository</a>
+    <a href="https://github.com/ShanTen/MicroLogger">Based Off</a>
 </footer>
 
 </html>
