@@ -1,23 +1,34 @@
 <html>
-    <head>
-        <title>My logs</title>
-        <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico?">
-        <link rel="stylesheet" href="css/styles.css">
 
-    </head>
-    <body id="bodyID">
-        <div style="width: 100%;margin: 0 auto;margin-top:50px;text-align: center;">
-            <h1 id="titleID"><u>Microblog of Logs</u></h1>
-        </div>
-        <br>
+<head>
+    <title>My logs</title>
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico?">
+    <link rel="stylesheet" href="css/styles.css">
 
-        <div class="blogPart"></div>
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.10.0/styles/default.min.css">
+    <script type="module">
+    import hljs from 'https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/highlight.min.js';
+    //  and it's easy to individually load & register additional languages
+    import go from 'https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/languages/go.min.js';
+    hljs.registerLanguage('go', go);
+    </script>
+</head>
 
-        <script src="./js/data.js"></script>
-        <script src="./js/index.js"></script>
+<body id="bodyID">
+    <div style="width: 100%;margin: 0 auto;margin-top:50px;text-align: center;">
+        <h1 id="titleID"><u>Microblog of Logs</u></h1>
+    </div>
+    <br>
 
-    </body>
-    <footer style="text-align: center; width: 100%;"> 
-        <a href="https://github.com/ShanTen/MicroLogger">Link to Repository</a> 
-    </footer>
+    <div class="blogPart"></div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+<footer style="text-align: center; width: 100%;">
+    <a href="https://github.com/ShanTen/MicroLogger">Link to Repository</a>
+</footer>
+
 </html>
